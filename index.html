@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexi Legal | Inteligencia Artificial para Despachos</title>
+  <meta name="description" content="Atención por WhatsApp con inteligencia artificial y panel de gestión en tiempo real para despachos de abogados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            dark: '#050505',
+            card: '#0D0D0E',
+            border: '#1F1F23',
+            muted: '#8E8E93',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #050505;
+      color: #FAFAFA;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glow {
+      background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-white selection:text-black antialiased">
+
+  <!-- Glow superior sutil -->
+  <div class="absolute inset-x-0 top-0 h-96 glow pointer-events-none"></div>
+
+  <!-- Barra de Navegación -->
+  <header class="relative z-10 max-w-5xl mx-auto w-full px-6 py-8 flex items-center justify-between border-b border-border/40">
+    <div class="flex items-center gap-2.5">
+      <span class="text-2xl md:text-3xl font-semibold tracking-tight">Lexi</span>
+      <span class="text-sm uppercase tracking-widest text-muted border border-border px-2.5 py-0.5 rounded">Legal</span>
+    </div>
+    <a href="#contacto" class="text-xs tracking-wider uppercase text-muted hover:text-white transition-colors duration-200">
+      Contacto
+    </a>
+  </header>
+
+  <!-- Contenido Central -->
+  <main class="relative z-10 max-w-5xl mx-auto w-full px-6 py-20 md:py-28 my-auto">
+
+    <!-- Título Principal -->
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1] max-w-3xl mb-8">
+      Atención por WhatsApp e inteligencia artificial para tu despacho.
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="text-lg md:text-xl text-muted max-w-2xl font-light leading-relaxed mb-12">
+      Automatizamos la recepción de clientes potenciales con respuestas inmediatas y un tono estrictamente profesional, coordinado en directo con un panel privado para letrados.
+    </p>
+
+    <!-- Botón de Contacto Principal -->
+    <div class="flex flex-wrap items-center gap-4 mb-24">
+      <a href="#contacto" class="px-6 py-3.5 bg-white text-black font-medium text-sm rounded-lg hover:bg-neutral-200 transition-all duration-200">
+        Solicitar acceso para despacho
+      </a>
+      <span class="text-xs text-muted">lexilegal.es</span>
+    </div>
+
+    <!-- Servicios en 3 Bloques Minimalistas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 border-t border-border/50">
+      <div class="p-6 rounded-xl border border-border/60 bg-card/40">
+        <span class="text-xs font-mono text-muted block mb-4">01</span>
+        <h2 class="text-base font-medium mb-2">WhatsApp 24/7</h2>
+        <p class="text-sm text-muted font-light leading-relaxed">
+          Atención continua e inmediata a las personas que contactan con tu bufete, sin tiempos de espera.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-border/60 bg-card/40">
+        <span class="text-xs font-mono text-muted block mb-4">02</span>
+        <h2 class="text-base font-medium mb-2">Panel de Control Privado</h2>
+        <p class="text-sm text-muted font-light leading-relaxed">
+          Cada abogado accede con usuario y clave a su entorno seguro para gestionar expedientes y clientes en tiempo real.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-border/60 bg-card/40">
+        <span class="text-xs font-mono text-muted block mb-4">03</span>
+        <h2 class="text-base font-medium mb-2">Supervisión del Letrado</h2>
+        <p class="text-sm text-muted font-light leading-relaxed">
+          El profesional mantiene el control absoluto y puede intervenir manualmente en cualquier momento del diálogo.
+        </p>
+      </div>
+    </div>
+    <!-- Sección de Contacto en Grande -->
+    <section id="contacto" class="mt-28 pt-16 border-t border-border/60 scroll-mt-12">
+      <div class="mb-10">
+        <span class="text-xs font-mono uppercase tracking-widest text-muted block mb-3">Contacto Directo</span>
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Hablemos sobre tu despacho.</h2>
+        <p class="text-muted font-light mt-3 text-base max-w-xl">
+          Si diriges un despacho o eres letrado y deseas incorporar el asistente en WhatsApp y el panel de control, contacta directamente con nosotros:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Tarjeta Correo Principal -->
+        <a href="mailto:soporte@lexilegal.es" class="group p-8 rounded-2xl border border-border bg-card/60 hover:border-neutral-500 hover:bg-card transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-border flex items-center justify-center text-white mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <span class="text-xs uppercase tracking-wider text-muted font-medium block mb-2">Correo Oficial</span>
+            <p class="text-xl md:text-2xl font-semibold text-white group-hover:text-neutral-200 transition-colors break-all">
+              soporte@lexilegal.es
+            </p>
+          </div>
+          <div class="mt-8 flex items-center gap-2 text-xs text-muted group-hover:text-white transition-colors">
+            <span>Enviar mensaje directo</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Tarjeta Contacto Personal / LinkedIn -->
+        <a href="https://www.linkedin.com/in/mario-zamorano-880405299/" target="_blank" rel="noopener noreferrer" class="group p-8 rounded-2xl border border-border bg-card/60 hover:border-neutral-500 hover:bg-card transition-all duration-200 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-neutral-900 border border-border flex items-center justify-center text-white mb-6">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z"/>
+              </svg>
+            </div>
+            <span class="text-xs uppercase tracking-wider text-muted font-medium block mb-2">Fundador</span>
+            <p class="text-xl md:text-2xl font-semibold text-white group-hover:text-neutral-200 transition-colors">
+              Mario Javier Zamorano López
+            </p>
+          </div>
+          <div class="mt-8 flex items-center gap-2 text-xs text-muted group-hover:text-white transition-colors">
+            <span>Conectar en LinkedIn</span>
+            <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="relative z-10 max-w-5xl mx-auto w-full px-6 py-10 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
+    <div>
+      <span class="text-white font-medium">Lexi Legal</span> &copy; 2026. Todos los derechos reservados.
+    </div>
+    <div class="text-neutral-500">
+      lexilegal.es
+    </div>
+  </footer>
+
+</body>
+</html>
